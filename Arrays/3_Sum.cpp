@@ -94,7 +94,7 @@ vector<vector<int>> SumZero3(vector<int> &arr){
 }
 int main(){
     vector<int> arr = {-1, 0, 1, 2, -1, -4};
-    vector<vector<int>> res=SumZero3(arr);
+    vector<vector<int>> res=SumZero2(arr);
     for(auto &it : res){
         for(auto &num : it){
             cout<<num<<" ";
@@ -119,8 +119,7 @@ as we are mainly using 3 nested loops. And inserting triplets into the set takes
 Space Complexity: O(2 * no. of the unique triplets) + O(N) as we are using a set data structure and a list to store the triplets and extra O(N) for storing the array elements in another set.
 */
 
-/*
-Optimal Method---------------------------------------------------------------------------
+/*Optimal Method---------------------------------------------------------------------------
 Time Complexity: O(NlogN)+O(N2), as The pointer i, is running for approximately N times. And both the pointers j and k combined can run for approximately N times including the operation of skipping duplicates. So the total time complexity will be O(N2). 
 
 Space Complexity: O(no. of quadruplets), This space is only used to store the answer. We are not using any extra space to solve this problem. So, from that perspective, space complexity can be written as O(1).
