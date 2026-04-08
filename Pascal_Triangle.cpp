@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-//Problem 1
+//Problem 1 
 // In this type of problem we have to find the number in the pascal triangle when rows and columns is give.
 long long nCr(int n, int r){
     int res=1;
