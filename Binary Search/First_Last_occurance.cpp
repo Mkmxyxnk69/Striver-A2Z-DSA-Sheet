@@ -11,7 +11,7 @@ vector<int> Occurance1(vector<int> &arr, int target){
         {
             temp.push_back(i);
         }
-    }
+    } 
     return temp;
     
 }
